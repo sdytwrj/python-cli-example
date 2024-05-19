@@ -6,6 +6,7 @@ name: Docker
 # documentation.
 
 on:
+  workflow_dispatch:
   #schedule:
     #- cron: '31 12 * * *'
   push:
@@ -15,7 +16,7 @@ on:
   pull_request:
     branches: [ "main" ]
     
-  workflow_dispatch:
+  
 
 env:
   # Use docker.io for Docker Hub if empty
